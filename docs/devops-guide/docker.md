@@ -459,6 +459,17 @@ Variable | Description | Example
 
 ### Jitsi Meet configuration
 
+#### Basic configuration
+
+Variable | Description | Example
+--- | --- | ---
+`APP_NAME` | Name of the application | Jitsi Meet
+`LOGO_URL` | Url of the logo (relative or absolute) | `images/custom-images/logo.svg`
+
+Note that when defining the `LOGO_URL` variable, the `images/custom-images/` path in the web server automatically serves `${CONFIG}/web/custom-images/`. When the `logo.svg` file is in this directory, the `images/custom-images/logo.svg` path will target it.
+
+#### Other configuration
+
 Jitsi-Meet uses two configuration files for changing default settings within
 the web interface: ``config.js`` and ``interface_config.js``. The files are
 located within the ``CONFIG/web/`` directory configured within your environment file.
